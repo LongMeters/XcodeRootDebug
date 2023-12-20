@@ -15,7 +15,7 @@ static NSString *debugserverPath;
 static BOOL isRootUser;
 
 static void reloadSettings() {
-	NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:@"/private/var/mobile/Library/Preferences/com.byteage.xcoderootdebug.plist"];
+	NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:@"/var/jb/User/Library/Preferences/com.byteage.xcoderootdebug.plist"];
 	NSNumber * enabledValue = (NSNumber *)[settings objectForKey:@"enabled"];
 	enabled = (enabledValue)? [enabledValue boolValue] : YES;
 	debugserverPath = [settings objectForKey:@"debugserverPath"];

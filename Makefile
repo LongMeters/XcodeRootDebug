@@ -1,6 +1,6 @@
 THEOS_DEVICE_IP = localhost -o StrictHostKeyChecking=no
-THEOS_DEVICE_PORT = 2222
-
+THEOS_DEVICE_PORT = 3333
+THEOS_PACKAGE_SCHEME=rootless
 ARCHS = arm64 arm64e
 
 TARGET = iphone:clang:14.5:9.0
